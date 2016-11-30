@@ -39,6 +39,7 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
     arel (7.1.2)
+    bcrypt (3.1.11)
     builder (3.2.2)
     climate_control (0.0.3)
       activesupport (>= 3.0)
@@ -97,6 +98,7 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (~> 0.3.0)
+    pg (0.19.0)
     pkg-config (1.1.7)
     puma (3.6.0)
     rack (2.0.1)
@@ -129,6 +131,7 @@ GEM
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
+    redis (3.3.2)
     sass (3.4.22)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
@@ -174,6 +177,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
   jquery-rails
@@ -182,8 +186,10 @@ DEPENDENCIES
   listen (~> 3.0.5)
   oauth
   paperclip
+  pg
   puma
   rails (~> 5.0.0)
+  redis (~> 3.0)
   sass-rails (~> 5.0)
   simple-navigation
   spring
