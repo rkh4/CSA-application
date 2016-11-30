@@ -1,0 +1,10 @@
+I"ð(function() {
+  App.display = App.cable.subscriptions.create("DisplayChannel", {
+    received: function(data) {
+      console.log("data: " + data['message']);
+      return $('#messages').append(data['message']);
+    }
+  });
+
+}).call(this);
+:ET
